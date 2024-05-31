@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="display-4">Dépistage de la Neuropathie Autonome</h1>
+    <p class="lead">À partir de la variabilité de rythme cardiaque</p>
+    <div class="mt-4">
+        <a href="{{ url_for('patient_form') }}" class="btn btn-primary btn-lg m-2">
+            <i class="fas fa-user"></i> Formulaire Patient
+        </a>
+        <a href="{{ url_for('report') }}" class="btn btn-secondary btn-lg m-2">
+            <i class="fas fa-file-alt"></i> Rapport
+        </a>
+    </div>
+</div>
+{% endblock %}
